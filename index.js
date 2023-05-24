@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const db = require('@cyclic.sh/dynamodb')
-const auth = require('./auth');
+const authenticate = require('./auth');
 
 app.use(auth);
 app.use(express.json())
